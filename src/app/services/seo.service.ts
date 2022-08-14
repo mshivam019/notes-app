@@ -20,7 +20,7 @@ export class SeoService {
       { name: 'og:image', content: image },
       // Twitter Card
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@fireship_dev' },
+      { name: 'twitter:site', content: '@mshivam190' },
     ]);
   }
 }
