@@ -1,9 +1,9 @@
 {
-  "name": "firestarter",
+  "name": "notes",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "",
     "lint": "ng lint",
@@ -14,10 +14,9 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "serve:ssr": "node dist/server",
-    "build:client-and-server-bundles": "ng build && ng run firestarter:server:production",
-    "dev:ssr": "ng run firestarter:serve-ssr",
-    "heroku-postbuild": "ng build",
-    "prerender": "ng run firestarter:prerender"
+    "build:client-and-server-bundles": "ng build && ng run notes:server:production",
+    "dev:ssr": "ng run notes:serve-ssr",
+    "prerender": "ng run notes:prerender"
   },
   "private": true,
   "dependencies": {
@@ -81,9 +80,5 @@
     "typescript": "^4.2.3",
     "wait-on": "^4.0.0",
     "webpack-cli": "^3.3.11"
-  },
-  "engines": {
-    "node": "16.14.0",
-    "npm": "8.3.1"
   }
 }
